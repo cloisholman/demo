@@ -1,0 +1,18 @@
+p {
+  margin: 10px;
+  text-indent: 30pt;
+}
+
+p {
+  padding: 5px;
+}
+body {
+  background-color: #00994d;
+}
+header.titles{
+	font-weight: bold;
+}
+
+header{
+	text-decoration: underline;
+}
