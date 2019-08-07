@@ -6,12 +6,12 @@ public class Artists {
 
     private String Name;
     private String Hometown;
-    private int DOB;
+    private String DOB;
     private String bio;
     private String Movement;
 
 
-    public Artists(String name, String hometown, int DOB, String bio, String movement) {
+    public Artists(String name, String hometown, String DOB, String bio, String movement) {
         Name = name;
         Hometown = hometown;
         this.DOB = DOB;
@@ -43,11 +43,11 @@ public class Artists {
         Hometown = hometown;
     }
 
-    public int getDOB() {
+    public String getDOB() {
         return DOB;
     }
 
-    public void setDOB(int DOB) {
+    public void setDOB(String DOB) {
         this.DOB = DOB;
     }
 
