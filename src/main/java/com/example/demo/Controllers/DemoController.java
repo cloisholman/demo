@@ -13,9 +13,8 @@ public class DemoController {
     }
     */
    @RequestMapping(value = "")
-    public String index(){
-   //public String search(Model model){
-      // Artists artist1 = new Artists("Pablo Picasso","Málaga","10/25/1881", "Lorem Ipsum", "Cubism");
+   public String search(Model model){
+       Artists artist1 = new Artists("Pablo Picasso","Málaga","10/25/1881", "Lorem Ipsum", "Cubism");
    return "index";
    }
 }
