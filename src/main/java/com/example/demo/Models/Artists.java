@@ -19,6 +19,10 @@ public class Artists {
         Movement = movement;
     }
 
+    public Artists(String name){
+        Name = name;
+    }
+
     public String getMovement() {
         return Movement;
     }

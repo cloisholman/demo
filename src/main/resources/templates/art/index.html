@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http.thymeleaf.org/">
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8"/>
     <title>My Project</title>
@@ -15,6 +15,15 @@ a selection of their works, their artistic movement and time period the artist w
 The user will be able to search each of these characteristics. I chose to make a project about art history as art work invites social commentary and robust conversation.
 Creative expression is really important to me and I want to share that.</p>
 
+
+
+<p th:unless="${artists} and ${artists.size()}">no artist found</p>
+<a href="/art/add">Add Your Favorite Artist</a>
+
+
+<ul>
+    <li th:each="artist : ${artists}" th:text="${artist.name}"></li>
+</ul>
 
 </body>
 </html>
