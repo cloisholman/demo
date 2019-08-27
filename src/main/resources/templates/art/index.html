@@ -2,11 +2,11 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8"/>
-    <title>My Project</title>
-    <link rel="stylesheet" type="text/css" href="website.css" media="screen" />
-
-
+    <link rel="stylesheet" type="text/css" href="/website.css" media="screen" />
 </head>
+
+<title>My Project</title>
+
 <body>
 <h1><center>Let's Talk Art History</center></h1>
 
@@ -17,7 +17,7 @@ Creative expression is really important to me and I want to share that.</p>
 
 
 
-<p th:unless="${artists} and ${artists.size()}">no artist found</p>
+<!--<p th:unless="${artists} and ${artists.size()}">no artist found</p>-->
 <a href="/art/add">Add Your Favorite Artist</a>
 
 
